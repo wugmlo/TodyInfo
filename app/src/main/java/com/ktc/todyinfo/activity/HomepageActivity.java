@@ -1,19 +1,17 @@
 package com.ktc.todyinfo.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
 import com.ktc.todyinfo.R;
-import com.ktc.todyinfo.adapter.IconAdapter;
-import com.ktc.todyinfo.adapter.ItemTouchCallBack;
+import com.ktc.todyinfo.widget.adapter.IconAdapter;
+import com.ktc.todyinfo.widget.adapter.ItemTouchCallBack;
 import com.ktc.todyinfo.model.Icon;
 import com.ktc.todyinfo.widget.HeaderBarView;
 

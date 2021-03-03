@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_above="@+id/fl_main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fac_main_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="@dimen/fac_margin_bottom"
+            android:layout_marginEnd="@dimen/fac_margin_end"
+            android:src="@drawable/ic_baseline_play_circle_outline_32"/>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_main_bottom"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_bottom_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_height">
+
+        <RadioGroup
+            android:id="@+id/rg_main_bottom"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rb_main_shanghai"
+                android:text="@string/text_main_shanghai"
+                android:drawableTop="@drawable/selector_main_top_shanghai"
+                style="@style/main_bottom_rb_style"/>
+
+            <RadioButton
+                android:id="@+id/rb_main_hangzhou"
+                android:text="@string/text_main_hangzhou"
+                android:drawableTop="@drawable/selector_main_top_hangzhou"
+                style="@style/main_bottom_rb_style"/>
+
+        </RadioGroup>
+    </FrameLayout>
+
+</RelativeLayout>

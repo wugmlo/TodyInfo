@@ -1,4 +1,4 @@
-package com.ktc.todyinfo.adapter;
+package com.ktc.todyinfo.widget.adapter;
 
 import android.util.Log;
 import android.view.LayoutInflater;
