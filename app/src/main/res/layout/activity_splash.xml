@@ -2,12 +2,25 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".SplashActivity"
+    tools:context=".view.SplashActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <com.ktc.todyinfo.widget.FullScreenVideoView
         android:id="@+id/vv_play"
         style="@style/video_view_style" />
+
+    <TextView
+        android:id="@+id/tv_splash_skip"
+        android:text="跳过"
+        android:textSize="18dp"
+        android:textColor="@color/color_ffffff"
+        android:background="@drawable/shape_splash"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content" />
 
 </FrameLayout>

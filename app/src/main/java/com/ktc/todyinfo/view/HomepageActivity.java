@@ -1,4 +1,4 @@
-package com.ktc.todyinfo.activity;
+package com.ktc.todyinfo.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.ItemTouchHelper;

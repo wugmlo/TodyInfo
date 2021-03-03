@@ -9,33 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TodyInfo">
-        <activity android:name=".activity.MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".activity.HomepageActivity"
+        <activity android:name=".view.MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>-->
         </activity>
         <activity
-            android:name=".SplashActivity"
+            android:name=".view.HomepageActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name=".view.SplashActivity"
             android:theme="@style/FullScreen">
-
-            <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            -->
         </activity>
     </application>
 

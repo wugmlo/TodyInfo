@@ -1,4 +1,4 @@
-package com.ktc.todyinfo.activity;
+package com.ktc.todyinfo.view;
 
 import android.os.Bundle;
 
@@ -6,10 +6,11 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.ktc.todyinfo.annotation.ViewInject;
+import com.ktc.todyinfo.view.LifeCircleMvpActivity;
 
 import butterknife.ButterKnife;
 
-public class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends LifeCircleMvpActivity {
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -23,12 +24,19 @@ public class BaseActivity extends AppCompatActivity {
             int layoutId = annotation.mainLayoutId();
             if (layoutId > 0) {
                 setContentView(layoutId);
-                ButterKnife.bind(this);
+                bindView();
+                afterBindView();
             } else {
                 throw new RuntimeException("mainLayoutId < 0");
             }
         } else {
             throw new RuntimeException("mainLayoutId = null");
         }
+    }
+
+    public abstract void afterBindView();
+
+    private void bindView() {
+        ButterKnife.bind(this);
     }
 }

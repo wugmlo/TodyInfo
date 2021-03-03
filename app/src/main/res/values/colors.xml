@@ -11,4 +11,6 @@
     <color name="color_bottom_checked">#da7253</color>
     <color name="color_bottom_unchecked">#dad5d2</color>
     <color name="color_bottom_background">#343436</color>
+    <color name="color_ffffff">#ffffffff</color>
+    <color name="color_black_30">#B2000000</color>
 </resources>
