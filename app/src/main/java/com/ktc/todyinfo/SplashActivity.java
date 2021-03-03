@@ -33,18 +33,9 @@ public class SplashActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         vv_play.setVideoURI(Uri.parse("android.resource://" +
                 getPackageName() + File.separator + R.raw.splash));
-        vv_play.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-            @Override
-            public void onPrepared(MediaPlayer mp) {
-                mp.start();
-            }
-        });
-        vv_play.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-//                mp.start();
-                startActivity(new Intent(SplashActivity.this, HomepageActivity.class));
-            }
+        vv_play.setOnPreparedListener(MediaPlayer::start);
+        vv_play.setOnCompletionListener(mp -> {
+            startActivity(new Intent(SplashActivity.this, HomepageActivity.class));
         });
     }
 

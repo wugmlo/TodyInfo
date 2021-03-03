@@ -14,4 +14,9 @@
         app:title_text="标题"
         app:show_views="center_text|left_img|right_img"/>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </LinearLayout>
