@@ -2,11 +2,11 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".view.SplashActivity"
+    tools:context=".splash.SplashActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.ktc.todyinfo.widget.FullScreenVideoView
+    <com.ktc.todyinfo.splash.FullScreenVideoView
         android:id="@+id/vv_play"
         style="@style/video_view_style" />
 

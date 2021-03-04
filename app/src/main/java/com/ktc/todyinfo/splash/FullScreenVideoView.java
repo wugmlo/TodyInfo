@@ -1,4 +1,4 @@
-package com.ktc.todyinfo.widget;
+package com.ktc.todyinfo.splash;
 
 import android.content.Context;
 import android.util.AttributeSet;

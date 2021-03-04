@@ -1,4 +1,4 @@
-package com.ktc.todyinfo.annotation;
+package com.ktc.todyinfo.base;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;

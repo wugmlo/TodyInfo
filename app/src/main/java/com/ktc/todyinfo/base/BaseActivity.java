@@ -1,11 +1,9 @@
-package com.ktc.todyinfo.view;
+package com.ktc.todyinfo.base;
 
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 
-import com.ktc.todyinfo.annotation.ViewInject;
 import com.ktc.todyinfo.view.LifeCircleMvpActivity;
 
 import butterknife.ButterKnife;

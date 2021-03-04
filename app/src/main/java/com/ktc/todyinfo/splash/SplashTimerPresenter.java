@@ -1,10 +1,8 @@
-package com.ktc.todyinfo.mvp.presenter;
+package com.ktc.todyinfo.splash;
 
 import android.util.Log;
 
 import com.ktc.todyinfo.mvp.ISplashActivityContract;
-import com.ktc.todyinfo.view.SplashActivity;
-import com.ktc.todyinfo.mvp.IMvpView;
 import com.ktc.todyinfo.mvp.base.BaseMvpPresenter;
 import com.ktc.todyinfo.utils.CountDownTimer;
 

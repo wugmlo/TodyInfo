@@ -1,4 +1,4 @@
-package com.ktc.todyinfo.view;
+package com.ktc.todyinfo.splash;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -8,9 +8,10 @@ import android.widget.TextView;
 import android.widget.VideoView;
 
 import com.ktc.todyinfo.R;
-import com.ktc.todyinfo.annotation.ViewInject;
+import com.ktc.todyinfo.base.ViewInject;
+import com.ktc.todyinfo.base.BaseActivity;
 import com.ktc.todyinfo.mvp.ISplashActivityContract;
-import com.ktc.todyinfo.mvp.presenter.SplashTimerPresenter;
+import com.ktc.todyinfo.main.MainActivity;
 
 import java.io.File;
 
